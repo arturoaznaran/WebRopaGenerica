@@ -1,0 +1,41 @@
+// .contact-bar-container {
+//   display: ;
+// }
+
+.contact-fixed-bar {
+  background: white;
+  box-shadow: 0 -0.1rem .5rem rgba(0,0,0,0.1);
+}
+
+.contact-fixed-bar--fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.contact-fixed-bar__link {
+  font-size: .8rem;
+  flex: 1 0 auto;
+  max-width: 33.33%;
+
+  & {
+    transition: color .2s;
+  }
+
+  &, &:link, &:visited {
+    text-decoration: none;
+    color: #616161;
+  }
+
+  svg {
+    font-size: 1.35rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-bar-container {
+    display: none;
+  }
+}

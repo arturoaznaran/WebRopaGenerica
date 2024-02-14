@@ -1,0 +1,98 @@
+@import './../../node_modules/bootstrap/scss/bootstrap';
+@import 'navbar';
+@import 'welcome';
+@import 'intro';
+@import 'samples';
+@import 'contact';
+@import 'prices';
+@import 'comments';
+@import 'selling-terms';
+@import 'contact-bar';
+@import 'contact-right';
+// @import 'wa-floating-button';
+
+html {
+  --accent: #ff6347;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #333;
+  font-family: Lato, sans-serif;
+}
+
+.wa-color {
+  color: #2fb843 !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+  color: rgba(0,0,0,0.9);
+}
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0,0,0,0.7);
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.font-ibmps {
+  font-family: 'IBM Plex Serif';
+}
+.font-satisfy {
+  font-family: Satisfy, serif;
+}
+
+.imgbox {
+  img {
+    width: 100%;
+  }
+}
+
+.fade-in {
+  position: relative;
+  transform: translateY(100px);
+  transition: .5s;
+  transition-timing-function: ease-in-out;
+  opacity: .5;
+}
+.fade-in--active {
+  top: 0px;
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.page-footer {
+  position: relative;
+  background: white;
+}
+
+.btn-tr, .btn-tr:active, .btn-tr:hover {
+  border-radius: 0px;
+  background-color: transparent;
+  border: 1px solid #333;
+  color: #333;
+}
+.btn-white {
+  color: #fefefe;
+  border-color: #fefefe;
+
+  &:hover {
+    border-color: #aaa;
+    color: #aaa;
+  }
+}
+
+.title-block {
+  position: absolute;
+  top: -35px;
+  background: var(--accent);
+  color: white;
+  padding: 1rem 3rem;
+}
+.title-block--left {
+  left: -42px;
+}
+.title-block--right {
+  right: -42px;
+}

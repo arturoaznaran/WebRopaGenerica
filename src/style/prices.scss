@@ -1,0 +1,41 @@
+.s-prices {
+  background-color: #fafafa;
+  overflow: hidden;
+  padding: 2rem 0 3rem;
+
+  .price-card {
+    background-color: #ECEFF1;
+    border: 18px solid white;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.price-card__price {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.sample-container {
+  transition: .2s;
+  max-width: 255px;
+  margin: 0 auto;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.secure-text {
+  color: #00bb31;
+  img {
+    width: 76px;
+    margin-right: 12px;
+  }
+
+  span {
+    font-weight: bold;
+  }
+}

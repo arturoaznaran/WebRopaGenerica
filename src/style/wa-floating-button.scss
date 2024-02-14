@@ -1,0 +1,25 @@
+@import "./../../node_modules/bootstrap/scss/variables";
+
+.wa-floating {
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  background: white;
+  z-index: 999;
+  border: 3px solid #F5F5F5;
+
+  a, a:link {
+    color: #2fb843;
+    text-decoration: none;
+  }
+
+  img {
+    max-width: 56px;
+  }
+}
+
+@media(min-width: map-get($grid-breakpoints, "md")) {
+  .wa-floating {
+    display: none;
+  }
+}

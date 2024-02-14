@@ -1,0 +1,54 @@
+.contact-right {
+  $container-width: 286px;
+  $container-height: 178px;
+
+  display: none;
+  position: fixed;
+  background-color: #f0ffff;
+  box-shadow: 0 3px 5px rgba(0,0,0,.1);
+  top: calc(50% - #{$container-height / 2});
+  width: $container-width;
+  left: calc(100% - 54px);
+  transition: left .4s;
+
+  &:hover {
+    left: calc(100% - #{$container-width});
+  }
+
+  svg {
+    font-size: 1.3rem;
+
+    &.wa-color {
+      font-size: 1.5rem;
+    }
+  }
+
+  a {
+    transition: .4s;
+    display: flex;
+    align-items: center;
+    padding: 1.1rem;
+    font-size: .9rem;
+
+    &:hover {
+      background-color: rgba(0,0,0,.05);
+    }
+
+    &, &:link, &:visited {
+      text-decoration: none;
+      color: #616161;
+    }
+
+    & > div:first-child {
+      text-align: center;
+      min-width: 28px;
+      margin-right: 1rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-right {
+    display: flex;
+  }
+}

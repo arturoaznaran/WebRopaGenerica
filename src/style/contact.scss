@@ -1,0 +1,61 @@
+@import "./../../node_modules/bootstrap/scss/variables";
+
+.s-contact {
+  background-image: url('./../img/possible-bg.png');
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-color: lightcyan;
+  min-height: 70vh;
+
+  & > .container {
+    background: white;
+  }
+}
+
+.contact-data {
+  display: inline-block;
+  background-color: white;
+
+  a:hover {
+    text-decoration: none;
+    opacity: .9;
+  }
+
+  img {
+    max-width: 76px;
+  }
+}
+
+@media(max-width: map-get($grid-breakpoints, "sm")) {
+  .contact-data {
+    img {
+      max-width: 46px;
+    }
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+}
+
+.banks-logos {
+  img {
+    max-width: 125px;
+
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+  }
+}
+@media(max-width: map-get($grid-breakpoints, "lg")) {
+  .s-contact {
+    .container {
+      padding-bottom: 1.5rem !important;
+    }
+  }
+
+  .banks-logos {
+    img {
+      margin-bottom: 16px;
+    }
+  }
+}

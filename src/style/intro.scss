@@ -1,0 +1,43 @@
+@import "./../../node_modules/bootstrap/scss/variables";
+
+.s-intro {
+  min-height: 40vh;
+  background-color: #fafafa;
+
+  & > div {
+    height: 100%;
+  }
+}
+
+.s-intro-2 {
+  & > div {
+    height: 100%;
+    padding: 4rem 0;
+    background-image: url('./../img/blue_jean_pattern.jpg');
+    background-color: #eceff1;
+    background-attachment: fixed;
+    background-repeat: repeat;
+  }
+
+  svg {
+    font-size: 3.5rem;
+  }
+}
+
+@media(min-width: map-get($grid-breakpoints, "md")) {
+  .s-intro, .s-intro-2, .s-prices {
+    display: flex;
+    flex-direction: column;
+    & > div {
+      flex: 1 0 auto;
+    }
+  }
+}
+
+.s-prices {
+  min-height: 40vh;
+
+  & > div {
+    height: 100%;
+  }
+}

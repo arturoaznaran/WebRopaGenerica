@@ -1,0 +1,17 @@
+.main-navbar, .navbar-brand {
+  transition: .5s;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+}
+
+.pbginto {
+  .main-navbar {
+    background-color: white;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075);
+  }
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+}
